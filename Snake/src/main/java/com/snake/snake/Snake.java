@@ -21,7 +21,7 @@ public class Snake extends Application {
     Label lScore = new Label("score: 1");
     Label gameOver = new Label("GAME OVER!");
     Button restart = new Button("restart");
-    int score = 1;
+    int score = 0;
     int alt = 10;
     int lung = 10;
     int snakeY = 250;
@@ -88,7 +88,7 @@ public class Snake extends Application {
     }
 
     private void eRestart() {
-        this.score = 1;
+        this.score = 0;
         this.lScore.setText("score: " + this.score);
         this.snakeY = 250;
         this.snakeX = 250;
